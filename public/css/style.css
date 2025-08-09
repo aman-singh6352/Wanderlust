@@ -1,0 +1,85 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.nav-link {
+  color: #222222;
+}
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem !important;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+.cardlist {
+  margin-left: 3rem;
+  padding-left: 3rem;
+}
+
+.class-info {
+  text-align: center;
+}
+
+.card-body {
+  width: 100% !important;
+  object-fit: cover !important;
+  padding: auto 0 auto 0 !important;
+}
+
+.card-img-top:hover {
+  filter: brightness(1.05);
+}
+
+.show-image {
+  height: 30vh;
+}
+
+.btns {
+  display: flex;
+  gap: 2rem;
+}
+
+.right-nav {
+  text-align: end !important;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.btn-search,
+.btn-search:hover {
+  background-color: red !important;
+  color: white !important;
+}
+
+.btn-search {
+  border: none !important;
+  border-radius: 20rem !important;
+}
+.search-inp {
+  border-radius: 25px !important;
+  padding: 0.5rem 3rem 0.5rem 3rem !important;
+  font-size: 0.9rem !important;
+}

@@ -1,0 +1,30 @@
+<% layout("/layouts/boilerplate") -%>
+<div
+  class="cardlist mt-6"
+  style="display: flex; flex-wrap: wrap; padding: 1rem 0"
+>
+  <% for(let list of listings){ %>
+  <ul>
+    <li style="list-style: none">
+      <a href="/listings/<%= list._id %>" class="nav-link">
+        <div class="card listing-card" style="width: 18rem">
+          <img
+            src="<%= list.image.url %>"
+            class="card-img-top"
+            alt="Listing Image"
+            height="200"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <b><%= list.title %></b>
+              <br />
+              &#8377; <%= (list.price).toLocaleString("en-IN") %>/night
+              <br />
+            </p>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <% } %>
+</div>
